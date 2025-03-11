@@ -1,0 +1,19 @@
+import random
+
+
+symbols = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+
+password_length = int(input("Введите желаемую длину пароля: "))
+
+password = ""
+
+
+for i in range(password_length):
+    
+    random_symbol = random.choice(symbols)
+    
+    password += random_symbol
+
+
+print("Сгенерированный пароль:", password)
